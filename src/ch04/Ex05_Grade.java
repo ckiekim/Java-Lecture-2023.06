@@ -19,6 +19,7 @@ public class Ex05_Grade {
 		
 		switch(score / 10) {
 		case 10:
+			grade = "A+"; break;
 		case 9:
 			grade = "A" + aux; break;
 		case 8:
