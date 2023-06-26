@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String[] args) {
 		Parent parent = new Parent();
 		Child child = new Child();
-		
+	
 		parent.parentInt = 1000;
 		parent.parentMethod();
 		

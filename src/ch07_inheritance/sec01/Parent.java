@@ -7,7 +7,7 @@ public class Parent {
 	Parent(int parentInt) {
 		this.parentInt = parentInt;
 	}
-	
+
 	void parentMethod() {
 		System.out.println(this.parentInt);
 	}

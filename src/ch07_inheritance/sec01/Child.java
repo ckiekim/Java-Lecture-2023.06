@@ -7,7 +7,7 @@ public class Child extends Parent {
 	Child(int childInt) {
 		this.childInt = childInt;
 	}
-	
+
 	void childMethod() {
 		System.out.println(this.childInt);
 	}
