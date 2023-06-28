@@ -9,10 +9,10 @@ public class Q2_Palindrome {
 		int maxPal = 0, x = 0, y = 0;
 		for (int i = 100; i <= 999; i++) {
 			for (int k = i; k <= 999; k++) {
-				String mul = String.valueOf(i * k);
-				if (Strings.isPalindrome(mul)) {
-					if (i * k > maxPal) {
-						maxPal = i * k;
+				int mul = i * k;
+				if (Strings.isPalindrome(String.valueOf(mul))) {
+					if (mul > maxPal) {
+						maxPal = mul;
 						x = i;
 						y = k;
 					}
