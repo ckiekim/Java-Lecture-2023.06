@@ -7,7 +7,7 @@ public class Ex02_BoardList {
 
 	public static void main(String[] args) {
 		List<Board> list = new ArrayList<>();
-		
+
 		// 객체 추가
 		list.add(new Board(1, "James", "글 제목", "글 내용"));
 		list.add(new Board(2, "Maria", "Title", "Content"));

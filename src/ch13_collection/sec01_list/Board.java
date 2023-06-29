@@ -18,7 +18,7 @@ public class Board {
 		this.subject = subject;
 		this.content = content;
 	}
-	
+
 	public int getBid() {
 		return bid;
 	}
