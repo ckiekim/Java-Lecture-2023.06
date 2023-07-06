@@ -6,7 +6,7 @@ public class Application {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		CustomerService cs = new CustomerService();
+		CustomerService cs = new CustomerServiceImpl();
 		Boolean run = true;
 		
 		while (run) {
