@@ -26,7 +26,7 @@ public class Application {
 			case 4:
 				cs.deleteCustomer(); break;
 			case 5:
-				run = false; break;
+				run = false; System.out.println("프로그램을 종료합니다."); break;
 			default:
 				System.out.println("Warning: 1에서 5까지의 숫자만 입력하세요.");
 			}
