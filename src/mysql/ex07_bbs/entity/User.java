@@ -2,7 +2,7 @@ package mysql.ex07_bbs.entity;
 
 import java.time.LocalDate;
 
-public class Users {
+public class User {
 	private String uid;
 	private String password;
 	private String uname;
@@ -10,14 +10,14 @@ public class Users {
 	private LocalDate regDate;
 	private int isDeleted;
 	
-	public Users() { }
-	public Users(String uid, String password, String uname, String email) {
+	public User() { }
+	public User(String uid, String password, String uname, String email) {
 		this.uid = uid;
 		this.password = password;
 		this.uname = uname;
 		this.email = email;
 	}
-	public Users(String uid, String password, String uname, String email, LocalDate regDate, int isDeleted) {
+	public User(String uid, String password, String uname, String email, LocalDate regDate, int isDeleted) {
 		this.uid = uid;
 		this.password = password;
 		this.uname = uname;
