@@ -8,12 +8,14 @@ public class CustomerServiceImpl implements CustomerService {
 	private CustomerDao cDao = new CustomerDao();
 	private Scanner scan = new Scanner(System.in);
 	
+	@Override
 	public void listCustomer() {
 		List<Customer> list = cDao.getCustomerList();
 		for (Customer c: list)
 			System.out.println(c);
 	}
 	
+	@Override
 	public void registerCustomer() {
 		String uid = null;
 		while (true) {					// Unique한 uid를 받을 때 까지 반복
@@ -30,6 +32,7 @@ public class CustomerServiceImpl implements CustomerService {
 		System.out.println("고객 등록을 마쳤습니다.");
 	}
 	
+	@Override
 	public void updateCustomer() {
 		Customer c = null;
 		String uid = null;
@@ -50,6 +53,7 @@ public class CustomerServiceImpl implements CustomerService {
 		System.out.println("고객정보 수정을 마쳤습니다.");
 	}
 	
+	@Override
 	public void deleteCustomer() {
 		String uid = null;
 		while (true) {
