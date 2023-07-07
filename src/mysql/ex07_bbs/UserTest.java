@@ -6,6 +6,7 @@ import org.mindrot.bcrypt.BCrypt;
 
 import mysql.ex07_bbs.dao.UserDao;
 import mysql.ex07_bbs.entity.User;
+import mysql.ex07_bbs.service.UserService;
 
 public class UserTest {
 
@@ -39,10 +40,15 @@ public class UserTest {
 		System.out.println("==========================================");
 		
 		// 마리아 삭제
-		uDao.deleteUser("maria");
-		list = uDao.getUserList(10, 0);
-		for (User u: list)
-			System.out.println(u);
+//		uDao.deleteUser("maria");
+//		list = uDao.getUserList(10, 0);
+//		for (User u: list)
+//			System.out.println(u);
+		
+		UserService us = new UserService();
+		System.out.println(us.login("james", "james"));		// CORRECT_LOGIN = 0
+		System.out.println(us.login("james", "maria"));		// WRONG_PASSWORD = 1
+		System.out.println(us.login("brian", "brian"));		// UID_NOT_EXIST = 2
 	}
 
 }
